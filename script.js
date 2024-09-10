@@ -16,7 +16,7 @@ function newHitNumber(){
 }
 function makeBubble(){
     let bubble = "";
-for(let i= 0; i<=151; i++){
+for(let i= 0; i<=150; i++){
     let randomBubble = Math.floor(Math.random()*10);
     let color ="#"+`${Math.floor(Math.random()*16777215).toString(16)}`;
     bubble += `<div class="bubble" style="background-color:${color};">${randomBubble}</div>`
