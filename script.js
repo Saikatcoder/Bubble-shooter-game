@@ -3,7 +3,7 @@ const buttompannel = document.getElementById('#bulblecontainer');
 const score =  document.querySelector('#score');
 const hitNUmber = document.querySelector("#hit");
 const mainbox =  document.querySelector('.panel');
-let timer =5;
+let timer =60;
 let scorevalue = 0;
 let hitValue;
 function scoreIncrease(){
