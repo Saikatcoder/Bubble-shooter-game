@@ -23,6 +23,11 @@
     border-radius: 15px;
     background-color:#f966caf6 ;
  }
+ @media (max-width :720px ) {
+   .panel{
+      height: 90%;
+   }
+ }
  .paneltop{
     display: flex;
     align-items: center;

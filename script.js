@@ -3,7 +3,7 @@ const buttompannel = document.getElementById('#bulblecontainer');
 const score =  document.querySelector('#score');
 const hitNUmber = document.querySelector("#hit");
 const mainbox =  document.querySelector('.panel');
-let timer =60;
+let timer =5;
 let scorevalue = 0;
 let hitValue;
 function scoreIncrease(){
@@ -39,13 +39,22 @@ function runTimmer(){
 }
 buttompannel.addEventListener("click", (e)=>{
     let bubleClick = Number(e.target.textContent);
-    if(bubleClick === hitValue){
+
+    if(bubleClick != hitValue){
+        newHitNumber();
+        makeBubble();
+    }else{
         scorevalue += 10;
         score.innerHTML = scorevalue;
         newHitNumber();
         makeBubble();
         return (scorevalue)
     }
+
+    // if(bubleClick === hitValue){
+       
+     
+    // }
 })
 newHitNumber()
 runTimmer()
